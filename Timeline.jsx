@@ -1,5 +1,5 @@
 function Timeline(props) {
-  const tweetList = props.tweets.map((tw) => (
+  const tweetList = props.tweets.map(tw => (
     <Tweet
       key={tw.id}
       icon={tw.icon}
@@ -8,5 +8,5 @@ function Timeline(props) {
       content={tw.content}
     />
   ));
-  return <div className="timeline">{tweetList}</div>
+  return <div className="timeline">{tweetList}</div>;
 }
